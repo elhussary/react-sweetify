@@ -1,0 +1,50 @@
+:root {
+  --modal-background-color: white;
+  --modal-padding: 0.7rem 1.5rem;
+  --modal-width: 28rem; /* 768px */
+  --modal-border: 1px solid rgba(0, 0, 0, 0.2);
+  --modal-border-radius: 0.3rem;
+}
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.modal-container .modal-content {
+  flex: auto;
+  height: fit-content;
+  background-color: var(--modal-background-color);
+  padding: var(--modal-padding);
+  position: relative;
+  max-width: var(--modal-width);
+  margin: 1rem 0.1rem;
+  border: var(--modal-border);
+  border-radius: var(--modal-border-radius);
+}
+
+.modal-content.md {
+  --modal-width: 36rem; /* 576px */
+  max-width: var(--modal-width);
+}
+.modal-content.lg {
+  --modal-width: 48rem; /* 768px */
+  max-width: var(--modal-width);
+}
+.modal-content.xl {
+  --modal-width: 64rem; /* 1024px */
+  max-width: var(--modal-width);
+}
+
+.modal-content .close-modal-button {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.8rem;
+}
