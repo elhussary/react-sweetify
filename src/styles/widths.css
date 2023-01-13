@@ -1,0 +1,21 @@
+/*  List of Widths
+    Extra Small  -->       xs
+    Small        -->       sm
+    Medium       -->       md
+    large        -->       lg
+    x-large      -->       xl
+    2x-large     -->      2xl
+    full-screen  -->       fs
+
+ */
+
+/*  Extra Small */
+.modal-content.xs {
+  --modal-width: 100%; /* 320px */
+  max-width: var(--modal-width);
+}
+@media screen and (min-width: 640px) {
+  .modal-content.xs {
+    max-width: 22.5rem;
+  }
+}

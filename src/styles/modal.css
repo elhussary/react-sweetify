@@ -16,6 +16,7 @@
   display: flex;
   align-items: flex-start;
   justify-content: center;
+  padding: 0 0.6rem;
 }
 
 .modal-container .modal-content {
@@ -28,19 +29,6 @@
   margin: 1rem 0.1rem;
   border: var(--modal-border);
   border-radius: var(--modal-border-radius);
-}
-
-.modal-content.md {
-  --modal-width: 36rem; /* 576px */
-  max-width: var(--modal-width);
-}
-.modal-content.lg {
-  --modal-width: 48rem; /* 768px */
-  max-width: var(--modal-width);
-}
-.modal-content.xl {
-  --modal-width: 64rem; /* 1024px */
-  max-width: var(--modal-width);
 }
 
 .modal-content .close-modal-button {
