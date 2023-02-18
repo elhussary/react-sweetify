@@ -1,6 +1,6 @@
 import { useEffect, useRef, RefObject } from "react";
 
-const useOnClickOutside = <T extends HTMLDivElement>(handler: (event: MouseEvent) => void, ref?: RefObject<T>) => {
+export const useOnClickOutside = <T extends HTMLDivElement>(handler: (event: MouseEvent) => void, ref?: RefObject<T>) => {
   const domNode = ref || useRef<T>(null);
   useEffect(() => {
     const maybeHandler = (event: MouseEvent) => {
@@ -15,4 +15,3 @@ const useOnClickOutside = <T extends HTMLDivElement>(handler: (event: MouseEvent
   }, [handler, domNode]);
   return domNode;
 };
-export default useOnClickOutside;

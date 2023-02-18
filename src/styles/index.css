@@ -1,0 +1,121 @@
+:root {
+  --sweetify-background-color: white;
+  --sweetify-padding: 1rem 2.2rem 1rem 1rem;
+  --sweetify-width: 20rem;
+  --sweetify-border-radius: 0.3rem;
+  --sweetify-height: fit-content;
+  --sweetify-margin: 0.8rem;
+}
+
+.sweetify-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(0 0 0 / 0.2);
+}
+
+.sweetify-container .sweetify-content {
+  position: relative;
+  height: var(--sweetify-height);
+  margin: var(--sweetify-margin);
+  background-color: var(--sweetify-background-color);
+  box-shadow: 0 1px 10px 0 rgb(0 0 0 / 10%), 0 2px 15px 0 rgb(0 0 0 / 5%);
+  padding: var(--sweetify-padding);
+  width: var(--sweetify-width);
+  border-radius: var(--sweetify-border-radius);
+}
+
+.sweetify-container .close-sweetify {
+  position: absolute;
+  top: 0.4rem;
+  right: 0.4rem;
+  height: 16px;
+  width: 14px;
+}
+.close-sweetify svg:hover {
+  fill: #2c2c2c;
+}
+
+.sweetify-no-scroll {
+  overflow-y: hidden;
+}
+
+.sweetify-container.top-right {
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.sweetify-container.bottom-right {
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.sweetify-container.bottom-left {
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+.sweetify-container.top-left {
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.sweetify-container.middle-center {
+  align-items: center;
+  justify-content: center;
+}
+.sweetify-content.sm {
+  --sweetify-width: 40rem; /* 640px */
+}
+
+.sweetify-content.md {
+  --sweetify-width: 48rem; /* 768px */
+}
+
+.sweetify-content.lg {
+  --sweetify-width: 64rem; /* 1024px */
+}
+
+.sweetify-content.xl {
+  --sweetify-width: 80rem; /* 1280px */
+}
+@media screen and (max-width: 640px) {
+  .sweetify-content.fullscreen-sm {
+    --sweetify-width: 100vw;
+    --sweetify-height: 100vh;
+    --sweetify-margin: 0;
+    --sweetify-border-radius: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sweetify-content.fullscreen-md {
+    --sweetify-width: 100vw;
+    --sweetify-height: 100vh;
+    --sweetify-margin: 0;
+    --sweetify-border-radius: 0;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .sweetify-content.fullscreen-lg {
+    --sweetify-width: 100vw;
+    --sweetify-height: 100vh;
+    --sweetify-margin: 0;
+    --sweetify-border-radius: 0;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .sweetify-content.fullscreen-xl {
+    --sweetify-width: 100vw;
+    --sweetify-height: 100vh;
+    --sweetify-margin: 0;
+    --sweetify-border-radius: 0;
+  }
+}
